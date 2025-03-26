@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react"
 
 export function NoiseBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  let animationFrameId: number
+  const animationFrameId = useRef<number | null>(null)
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -32,7 +32,7 @@ export function NoiseBackground() {
       }
 
       ctx.putImageData(imageData, 0, 0)
-      animationFrameId = requestAnimationFrame(drawNoise) // Animación infinita
+      animationFrameId.current = requestAnimationFrame(drawNoise) // Animación infinita
     }
 
     window.addEventListener("resize", resize)
@@ -41,7 +41,9 @@ export function NoiseBackground() {
 
     return () => {
       window.removeEventListener("resize", resize)
-      cancelAnimationFrame(animationFrameId)
+      if (animationFrameId.current !== null) {
+        cancelAnimationFrame(animationFrameId.current)
+      }
     }
   }, [])
 
