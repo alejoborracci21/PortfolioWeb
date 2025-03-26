@@ -5,7 +5,7 @@ const projects = [
     title: "ALK Software",
     projectName: "ALK Software",
     tag: "Frontend Development",
-    imageUrl: "/ALKSoftware.png",
+    imageUrl: "/images/ALKSoftware.png",
     type: "Web",
     detailsLink: "/projects/alk-software",
     projectLink: "https://alk-software.com",
