@@ -28,13 +28,11 @@ export function DarkNavbar() {
 
   return (
     <>
-      {/* Timestamp in top-left corner */}
       <div className="fixed top-4 left-4 text-zinc-400 text-sm font-mono">{currentTime}</div>
 
-      {/* Fixed navbar at bottom */}
       <TooltipProvider>
         <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50">
-          <div className="flex items-center gap-1 p-2 bg-zinc-900/90 backdrop-blur-sm rounded-lg border border-zinc-800">
+          <div className="flex items-center gap-4 p-2 bg-zinc-900/90 backdrop-blur-sm rounded border border-zinc-800">
             <NavButton icon={<Home size={18} />} onClick={() => router.push("/")} tooltip="Inicio" />
             <NavButton icon={<Lightbulb size={18} />} onClick={() => router.push("/works")} tooltip="Trabajos" />
             <NavButton icon={<Info size={18} />} onClick={() => router.push("/about")} tooltip="Sobre mí" />
