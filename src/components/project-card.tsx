@@ -11,7 +11,6 @@ import {
 
 interface ProjectCardProps {
   title: string;
-  projectName: string;
   tag: string;
   imageUrl: string;
   type?: string;
@@ -22,17 +21,15 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ 
   title, 
-  projectName, 
   tag, 
   imageUrl,
   type = 'Web',
   detailsLink = '#',
   projectLink = '#',
-  description = ''
 }) => {
   return (
     <TooltipProvider>
-      <div className="w-full group relative bg-secondary/10 rounded-lg overflow-hidden border border-border/20">
+      <div className="w-full bg-background group relative rounded-lg overflow-hidden border border-border/20">
         {/* Project Image */}
         <div className="w-full aspect-video relative overflow-hidden">
           <Image
@@ -81,17 +78,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <div className="flex justify-between items-start mb-4">
             <div>
               <h3 className="text-2xl font-bold text-primary">{title}</h3>
-              <p className="text-muted-foreground text-sm">{projectName}</p>
               <p className="text-muted-foreground text-xs mt-1">{tag}</p>
             </div>
             <span className="text-xs text-muted-foreground uppercase">{type}</span>
           </div>
           
-          {description && (
-            <p className="text-muted-foreground text-sm line-clamp-3">
-              {description}
-            </p>
-          )}
         </div>
       </div>
     </TooltipProvider>

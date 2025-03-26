@@ -28,7 +28,7 @@ export function NoiseBackground() {
         data[i] = noise // Rojo
         data[i + 1] = noise // Verde
         data[i + 2] = noise // Azul
-        data[i + 3] = 30 // Alpha (más alto si quieres más opacidad)
+        data[i + 3] = 60 // Alpha (más alto para más opacidad)
       }
 
       ctx.putImageData(imageData, 0, 0)
