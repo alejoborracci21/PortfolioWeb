@@ -80,7 +80,7 @@
   --muted-foreground: oklch(0.709 0.01 56.259);
   
   /* Color de acento (teal) */
-  --accent: oklch(0.85 0.55 130);
+  --accent: oklch(0.60 0.10 260);
   --accent-hover: oklch(0.7 0.25 180); /* Versión más clara para hover */
   
   --accent-foreground: oklch(0.985 0.001 106.423);

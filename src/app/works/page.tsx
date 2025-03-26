@@ -25,10 +25,10 @@ const projects = [
     title: "Drivers",
     projectName: "Drivers",
     tag: "Fullstack Development",
-    imageUrl: "/ALKSoftware.png",
+    imageUrl: "/images/henry.jpg",
     type: "Web",
     detailsLink: "/projects/drivers",
-    projectLink: "https://drivers-app.com",
+    projectLink: "/henry.webp",
     description: "A web application designed to streamline driver management and tracking, with robust fullstack implementation."
   },
 ];
