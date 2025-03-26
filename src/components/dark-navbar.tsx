@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation"
 import { useState, useEffect } from "react"
 import type React from "react"
-import { Home, Lightbulb, Info, MoreHorizontal } from "lucide-react"
+import { Home, BriefcaseBusiness , User , Send } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "./ui/button"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip"
@@ -33,10 +33,10 @@ export function DarkNavbar() {
       <TooltipProvider>
         <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50">
           <div className="flex items-center gap-4 p-2 bg-zinc-900/90 backdrop-blur-sm rounded border border-zinc-800">
-            <NavButton icon={<Home size={18} />} onClick={() => router.push("/")} tooltip="Inicio" />
-            <NavButton icon={<Lightbulb size={18} />} onClick={() => router.push("/works")} tooltip="Trabajos" />
-            <NavButton icon={<Info size={18} />} onClick={() => router.push("/about")} tooltip="Sobre mí" />
-            <NavButton icon={<MoreHorizontal size={18} />} onClick={() => router.push("/contact")} tooltip="Contacto" />
+            <NavButton icon={<Home size={18} />} onClick={() => router.push("/")} tooltip="Home" />
+            <NavButton icon={<BriefcaseBusiness  size={18} />} onClick={() => router.push("/works")} tooltip="Works" />
+            <NavButton icon={<User  size={18} />} onClick={() => router.push("/about")} tooltip="About me" />
+            <NavButton icon={<Send size={18} />} onClick={() => router.push("/contact")} tooltip="Contact me" />
           </div>
         </div>
       </TooltipProvider>

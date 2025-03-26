@@ -2,6 +2,6 @@
 
 
 export default function Works() {
-    return <div>Works</div>;
+    return <div className="flex flex-col items-center justify-center">Works</div>;
   }
   

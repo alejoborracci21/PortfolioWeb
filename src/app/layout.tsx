@@ -1,13 +1,16 @@
-import type { Metadata } from "next"
-import { Inter } from 'next/font/google'
+import { Lilita_One } from "next/font/google"
 import "./globals.css"
 import { NoiseBackground } from "@/components/background"
 import { DarkNavbar } from "@/components/dark-navbar"
 
-const inter = Inter({ subsets: ["latin"] })
+// Importar la fuente Lilita One
+const lilitaOne = Lilita_One({
+  subsets: ["latin"],
+  weight: "400",  // Puedes ajustar el peso si es necesario
+})
 
-export const metadata: Metadata = {
-  title: "Portfolio",
+export const metadata = {
+  title: "Alejo Borracci",
   description: "Mi portfolio personal",
 }
 
@@ -18,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="dark">
-      <body className={inter.className}>
+      <body className={lilitaOne.className}> {/* Aplicar la clase de la fuente */}
         <NoiseBackground />
         
         <DarkNavbar />
