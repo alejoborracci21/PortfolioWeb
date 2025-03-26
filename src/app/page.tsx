@@ -1,15 +1,33 @@
-
-
-
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-      </footer>
-    </div>
-  );
+    <main className="flex min-h-screen flex-col items-center justify-center">
+      <div className="text-center space-y-4 mb-20">
+        <h1 className="text-4xl md:text-6xl font-bold tracking-wider">
+          HELLO. I&apos;M <span className="text-accent">YOUR NAME</span>.
+        </h1>
+        <h2 className="text-2xl md:text-4xl font-bold tracking-wider text-zinc-400">FRONTEND DEVELOPER.</h2>
+      </div>
+
+      <div className="max-w-3xl mx-auto px-4 w-full">
+        {[
+          { num: "01", text: "See my works", href: "/works" },
+          { num: "02", text: "More about me", href: "/about" },
+          { num: "03", text: "Get in touch", href: "/contact" },
+        ].map((item) => (
+          <a
+            key={item.num}
+            href={item.href}
+            className="flex items-center justify-between p-4 border border-zinc-800 rounded-lg hover:bg-zinc-900/50 hover:border-accent transition-all mb-4"
+          >
+            <div className="flex items-center gap-4">
+              <span className="text-zinc-500">{item.num}</span>
+              <span>{item.text}</span>
+            </div>
+            <span className="text-xl text-accent">→</span>
+          </a>
+        ))}
+      </div>
+    </main>
+  )
 }
+
