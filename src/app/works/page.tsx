@@ -8,7 +8,7 @@ const projects = [
     imageUrl: "/images/ALKSoftware.png",
     type: "Web",
     detailsLink: "/projects/alk-software",
-    projectLink: "https://alk-software.com",
+    projectLink: "https://alk-software.vercel.app/",
     description: "A comprehensive software solution developed with modern frontend technologies, focusing on user experience and performance optimization."
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     imageUrl: "/images/Wearfashion.png",
     type: "Web",
     detailsLink: "/projects/wear-fashion",
-    projectLink: "https://wear-fashion.com",
+    projectLink: "https://wearfashion.vercel.app/",
     description: "An innovative e-commerce platform integrating frontend and backend technologies to create a seamless shopping experience."
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     imageUrl: "/images/henry.jpg",
     type: "Web",
     detailsLink: "/projects/drivers",
-    projectLink: "/henry.webp",
+    projectLink: "https://github.com/alejoborracci21/PI-Drivers",
     description: "A web application designed to streamline driver management and tracking, with robust fullstack implementation."
   },
 ];
