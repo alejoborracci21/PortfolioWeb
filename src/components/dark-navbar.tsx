@@ -35,10 +35,10 @@ export function DarkNavbar() {
       <TooltipProvider>
         <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50">
           <div className="flex items-center gap-1 p-2 bg-zinc-900/90 backdrop-blur-sm rounded-lg border border-zinc-800">
-            <NavButton icon={<Home size={18} />} onClick={() => router.push("/")} tooltip="Home" />
-            <NavButton icon={<Lightbulb size={18} />} onClick={() => router.push("/works")} tooltip="Works" />
-            <NavButton icon={<Info size={18} />} onClick={() => router.push("/about")} tooltip="About me" />
-            <NavButton icon={<MoreHorizontal size={18} />} onClick={() => router.push("/contact")} tooltip="Send email" />
+            <NavButton icon={<Home size={18} />} onClick={() => router.push("/")} tooltip="Inicio" />
+            <NavButton icon={<Lightbulb size={18} />} onClick={() => router.push("/works")} tooltip="Trabajos" />
+            <NavButton icon={<Info size={18} />} onClick={() => router.push("/about")} tooltip="Sobre mí" />
+            <NavButton icon={<MoreHorizontal size={18} />} onClick={() => router.push("/contact")} tooltip="Contacto" />
           </div>
         </div>
       </TooltipProvider>
@@ -72,7 +72,7 @@ export function NavButton({ icon, active = false, onClick, tooltip }: NavButtonP
     return (
       <Tooltip>
         <TooltipTrigger asChild>{button}</TooltipTrigger>
-        <TooltipContent side="top" className="bg-zinc-800 border-zinc-700 text-zinc-200">
+        <TooltipContent side="top" className="bg-zinc-800 border-zinc-700 text-white">
           <p>{tooltip}</p>
         </TooltipContent>
       </Tooltip>
