@@ -2,7 +2,6 @@
 
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
-import type React from "react";
 import { Home, BriefcaseBusiness, User, Send, ArrowLeft, EyeOff, Eye } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
@@ -11,7 +10,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/t
 export function DarkNavbar() {
   const router = useRouter();
   const [currentTime, setCurrentTime] = useState<string>("");
-  const [isVisible, setIsVisible] = useState<boolean>(true); // Estado para mostrar/ocultar la navbar
+  const [isVisible, setIsVisible] = useState<boolean>(true);
 
   useEffect(() => {
     const updateTime = () => {
@@ -27,6 +26,12 @@ export function DarkNavbar() {
     return () => clearInterval(interval);
   }, []);
 
+  const toggleNavbar = () => {
+    document.startViewTransition(() => {
+      setIsVisible((prev) => !prev);
+    });
+  };
+
   if (!isVisible) {
     // Botón para mostrar la navbar cuando está oculta
     return (
@@ -38,7 +43,7 @@ export function DarkNavbar() {
                 variant="ghost"
                 size="icon"
                 className="rounded-md bg-zinc-800/80 hover:bg-zinc-700/80 text-zinc-400 hover:text-accent transition-all"
-                onClick={() => setIsVisible(true)}
+                onClick={toggleNavbar}
               >
                 <Eye size={18} />
               </Button>
@@ -57,7 +62,10 @@ export function DarkNavbar() {
       <div className="fixed top-4 left-4 text-zinc-400 text-sm font-mono">{currentTime}</div>
 
       <TooltipProvider>
-        <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50">
+        <div
+          id="navbar-container"
+          className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 view-transition-name-navbar"
+        >
           <div className="flex items-center gap-4 p-2 bg-zinc-900/90 backdrop-blur-sm rounded border border-zinc-800">
             {/* Botón para volver a la página anterior */}
             <NavButton
@@ -74,12 +82,14 @@ export function DarkNavbar() {
               tooltip="Works"
             />
             <NavButton icon={<User size={18} />} onClick={() => router.push("/about")} tooltip="About me" />
-            <a href="mailto:alejotrabajo2001@hotmail.com"><NavButton icon={<Send size={18} />} tooltip="Contact me" /></a>
+            <a href="mailto:alejotrabajo2001@hotmail.com">
+              <NavButton icon={<Send size={18} />} tooltip="Contact me" />
+            </a>
 
             {/* Botón para ocultar la navbar */}
             <NavButton
               icon={<EyeOff size={18} />}
-              onClick={() => setIsVisible(false)}
+              onClick={toggleNavbar}
               tooltip="Hide Navbar"
             />
           </div>
