@@ -22,7 +22,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
           href={projectLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-4 py-2 border bg-background border-gray-500 rounded-lg hover:bg-gray-800 transition"
+          className="px-4 py-2 border bg-zinc-700/80 border-gray-500 rounded-lg hover:bg-gray-800 transition"
         >
           Website
         </Link>

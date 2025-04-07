@@ -29,7 +29,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <TooltipProvider>
-      <div className="w-full bg-background group relative rounded-lg overflow-hidden border border-border/20">
+      <div className="w-full bg-gray-800 group relative rounded-lg overflow-hidden border border-border/20">
         {/* Project Image */}
         <div className="w-full aspect-video relative overflow-hidden">
           <Image

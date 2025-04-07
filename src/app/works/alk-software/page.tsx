@@ -17,7 +17,7 @@ export default function ALKSoftware() {
       <h1 className="text-3xl font-bold">What is this project about?</h1>
 
       {/* Contenedor para limitar el ancho del párrafo */}
-      <div className="max-w-3xl text-center">
+      <div className="max-w-3xl text-center mb-4">
         <p className="text-lg leading-relaxed">{project.description}</p>
       </div>
     </div>

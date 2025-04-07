@@ -74,7 +74,7 @@ export function DarkNavbar() {
               tooltip="Works"
             />
             <NavButton icon={<User size={18} />} onClick={() => router.push("/about")} tooltip="About me" />
-            <NavButton icon={<Send size={18} />} onClick={() => router.push("/contact")} tooltip="Contact me" />
+            <a href="mailto:alejotrabajo2001@hotmail.com"><NavButton icon={<Send size={18} />} tooltip="Contact me" /></a>
 
             {/* Botón para ocultar la navbar */}
             <NavButton
