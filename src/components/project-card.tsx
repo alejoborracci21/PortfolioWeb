@@ -4,8 +4,8 @@ import type React from "react"
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Text, ExternalLink, ArrowRight } from "lucide-react"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+import {  ArrowRight } from "lucide-react"
+import { TooltipProvider } from "@/components/ui/tooltip"
 import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
 
@@ -25,10 +25,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   imageUrl,
   type = "Web",
   detailsLink = "#",
-  projectLink = "#",
   description = "No description available for this project.",
 }) => {
-  const [activeTooltip, setActiveTooltip] = useState<string | null>(null)
   const [isHovered, setIsHovered] = useState(false)
 
   return (
@@ -70,50 +68,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </Badge>
           </div>
 
-          {/* Action Buttons - Bottom Right */}
-          <div className="absolute bottom-3 right-3 flex space-x-2 z-20">
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Link
-                  href={detailsLink}
-                  className={cn(
-                    "bg-black/50 hover:bg-accent text-white p-2 rounded-full",
-                    "transition-all duration-300 backdrop-blur-sm",
-                    "transform hover:scale-105 hover:rotate-3",
-                  )}
-                  onMouseEnter={() => setActiveTooltip("details")}
-                  onMouseLeave={() => setActiveTooltip(null)}
-                >
-                  <Text size={16} />
-                </Link>
-              </TooltipTrigger>
-              <TooltipContent side="top" hidden={activeTooltip !== "details"}>
-                <p>View Details</p>
-              </TooltipContent>
-            </Tooltip>
-
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Link
-                  href={projectLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={cn(
-                    "bg-black/50 hover:bg-accent text-white p-2 rounded-full",
-                    "transition-all duration-300 backdrop-blur-sm",
-                    "transform hover:scale-105 hover:rotate-3",
-                  )}
-                  onMouseEnter={() => setActiveTooltip("website")}
-                  onMouseLeave={() => setActiveTooltip(null)}
-                >
-                  <ExternalLink size={16} />
-                </Link>
-              </TooltipTrigger>
-              <TooltipContent side="top" hidden={activeTooltip !== "website"}>
-                <p>Visit Website</p>
-              </TooltipContent>
-            </Tooltip>
-          </div>
+          
 
           {/* Title Overlay - Bottom Left */}
           <div className="absolute bottom-0 left-0 p-4 z-20 w-full">
