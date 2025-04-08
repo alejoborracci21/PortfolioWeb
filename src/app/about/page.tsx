@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 export const metadata: Metadata = {
   title: 'About | Alejo Borracci',
-  description: 'Conocé más sobre Alejo Borracci, desarrollador fullstack y técnico informático con experiencia en liderazgo de proyectos.',
+  description: 'Conocé más sobre Alejo Borracci, desarrollador fullstack con experiencia en trabajo colaborativo, planificación y resolución de necesidades del cliente.',
 };
 
 export default function AboutPage() {
@@ -25,7 +25,7 @@ export default function AboutPage() {
             <div className="text-center sm:text-left">
               <h1 className="text-4xl font-bold">Hola, soy Alejo 👋</h1>
               <p className="text-muted-foreground text-lg mt-1">
-                Fullstack Developer & Project Manager
+                Desarrollador Web Fullstack
               </p>
             </div>
           </div>
@@ -37,10 +37,10 @@ export default function AboutPage() {
               Soy desarrollador fullstack y técnico informático de Rosario, Santa Fe. Me formé en la <strong>Academia Henry</strong> como Fullstack Developer, donde completé más de 800 horas de formación intensiva, enfocada en desarrollo web, metodologías ágiles y trabajo en equipo.
             </p>
             <p>
-              Me desempeño como <strong>Project Manager en BIMTRAZER</strong>, una empresa de software que integra BIM, inteligencia artificial y blockchain para optimizar procesos constructivos. En mi rol lideré reuniones con clientes, coordiné equipos multidisciplinarios y apliqué Scrum para planificar nuevas funcionalidades.
+              Tengo experiencia trabajando como Project Manager en una empresa de software enfocada en BIM, inteligencia artificial y blockchain para la industria de la construcción. En ese contexto, participé en la planificación de funcionalidades, la resolución de necesidades reales de los usuarios y la colaboración con distintas áreas para entregar soluciones eficientes.
             </p>
             <p>
-              Mi stack incluye React, Next.js, TypeScript, Node.js y TailwindCSS, con experiencia tanto en frontend como en backend. Siempre estoy buscando mejorar mis habilidades y llevar ideas a la realidad a través de la tecnología.
+              Mi stack incluye React, Next.js, TypeScript, Node.js y TailwindCSS, con experiencia tanto en frontend como en backend. Me motiva encontrar soluciones creativas, colaborar en equipos diversos y seguir aprendiendo nuevas tecnologías para crear productos con impacto.
             </p>
           </section>
 
@@ -60,9 +60,9 @@ export default function AboutPage() {
           <section className="space-y-2">
             <h2 className="text-xl font-semibold">¿Qué estoy haciendo ahora?</h2>
             <ul className="list-disc list-inside text-muted-foreground space-y-1">
-              <li>Dirigiendo el desarrollo de un módulo financiero en BIMTRAZER</li>
               <li>Publicando ebooks generados con inteligencia artificial</li>
               <li>Desarrollando un chatbot gratuito con Next.js y Hugging Face</li>
+              <li>Explorando nuevas oportunidades como desarrollador web</li>
             </ul>
           </section>
         </CardContent>
