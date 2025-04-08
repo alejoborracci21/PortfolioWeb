@@ -5,7 +5,7 @@ export default function ALKSoftware() {
   const project = projects[0];
 
   return (
-    <div className="flex flex-col items-center w-full bg-transparent text-foreground py-12 space-y-8">
+    <div className="flex flex-col items-center w-full bg-transparent text-foreground py-12 space-y-8 mb-10">
       {/* Componente de detalles del proyecto */}
       <ProjectDetails
         title={project.title}

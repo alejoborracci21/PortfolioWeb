@@ -5,7 +5,7 @@ export default function Wearfashion() {
   const project = projects[1];
 
   return (
-    <div className="flex flex-col items-center w-full bg-transparent text-foreground py-12 space-y-8">
+    <div className="flex flex-col items-center w-full mb-10 bg-transparent text-foreground py-12 space-y-8">
       {/* Componente de detalles del proyecto */}
       <ProjectDetails
         title={project.title}

@@ -175,3 +175,6 @@ html.dark body {
   border-color: oklch(var(--accent-hover));
 }
 
+.tooltip-provider-bg {
+  background: linear-gradient(180deg, rgba(211, 211, 211, 1) 50%, rgba(211, 211, 211, 0) 100%);
+}
