@@ -1,6 +1,7 @@
 import ProjectDetails from "@/components/project-detail";
 import TechCarousel from "@/components/tech-carousel";
 import { projects } from "../projects";
+import ProjectFeatures from "@/components/project-features";
 
 export default function Drivers() {
   const project = projects[2];
@@ -28,6 +29,40 @@ export default function Drivers() {
       icon: "/images/postgresql.svg",
     },
   ];
+
+  const features = [
+    {
+      title: "External API Integration",
+      description:
+        "Connects to a public Formula 1 API to fetch real-time driver data, enabling dynamic content updates.",
+    },
+    {
+      title: "Custom Database with Sequelize",
+      description:
+        "Stores custom drivers added by users using a PostgreSQL database managed through Sequelize ORM.",
+    },
+    {
+      title: "Full CRUD Functionality",
+      description:
+        "Users can create, read, update, and delete driver entries through an intuitive interface and backend integration.",
+    },
+    {
+      title: "Filtering & Sorting System",
+      description:
+        "Offers powerful filtering options by name, team, and age, enhancing the user experience and data exploration.",
+    },
+    {
+      title: "Single Page Application (SPA)",
+      description:
+        "Built entirely with React, the app provides seamless navigation without reloading, ensuring smooth performance.",
+    },
+    {
+      title: "Clean UI & Responsive Design",
+      description:
+        "Structured layout with HTML and CSS to ensure clarity and mobile responsiveness across devices.",
+    },
+  ];
+  
 
   return (
     <div className="flex flex-col w-full bg-gradient-to-b from-background to-background/95 text-foreground py-12 space-y-16">
@@ -57,13 +92,18 @@ export default function Drivers() {
             feature live during the evaluation. His ability to solve problems
             and articulate technical decisions is outstanding.”
           </blockquote>
-          <p className="mt-4 font-medium">— Individual Project Reviewer, SoyHenry</p>
+          <p className="mt-4 font-medium">
+            — Individual Project Reviewer, SoyHenry
+          </p>
         </div>
       </div>
 
       {/* Technology carousel */}
       <TechCarousel technologies={technologies} />
 
+      <ProjectFeatures features={features} />
+
+      
       {/* Call to action */}
       <div className="max-w-4xl mx-auto px-4 text-center mb-10">
         <div className="p-8 rounded-xl bg-gradient-to-br from-accent/10 via-transparent to-accent/5 border border-border/40">
@@ -82,6 +122,7 @@ export default function Drivers() {
           </a>
         </div>
       </div>
+      {/* Key features */}
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import ProjectDetails from "@/components/project-detail";
 import TechCarousel from "@/components/tech-carousel";
 import { projects } from "../projects";
+import ProjectFeatures from "@/components/project-features";
 
 export default function Wearfashion() {
   const project = projects[1];
@@ -37,6 +38,40 @@ export default function Wearfashion() {
     },
   ];
 
+  const features = [
+    {
+      title: "Team Collaboration & Leadership",
+      description:
+        "Led the team throughout the project, organized daily meetings, coordinated development sprints, and encouraged technical discussions.",
+    },
+    {
+      title: "E-commerce Functionality",
+      description:
+        "Implemented product listings, user registration/login, shopping cart logic, and order handling for a complete buying experience.",
+    },
+    {
+      title: "User Authentication",
+      description:
+        "Enabled secure user registration and login using Firebase, including role-based access for different sections of the app.",
+    },
+    {
+      title: "State Management with Redux",
+      description:
+        "Used Redux to manage application-wide state for products, users, and shopping cart, ensuring consistent and reactive behavior.",
+    },
+    {
+      title: "Database Integration",
+      description:
+        "Synchronized backend data with the frontend using Sequelize and PostgreSQL for reliable product and user data management.",
+    },
+    {
+      title: "Clean & Responsive UI",
+      description:
+        "Developed with React and custom CSS, ensuring mobile-first responsive design and a clear, engaging shopping interface.",
+    },
+  ];
+  
+
   return (
     <div className="flex flex-col w-full bg-gradient-to-b from-background to-background/95 text-foreground py-12 space-y-16">
       {/* Hero section with project details */}
@@ -72,8 +107,12 @@ export default function Wearfashion() {
 
       {/* Technology carousel */}
       <TechCarousel technologies={technologies} />
+
+      {/* Key features */}
+      <ProjectFeatures features={features} />
+
       {/* Call to action */}
-      <div className="max-w-4xl mx-auto px-4 text-center mb-10">
+      <div className="max-w-4xl mx-auto px-4 text-center mb-20">
         <div className="p-8 rounded-xl bg-gradient-to-br from-accent/10 via-transparent to-accent/5 border border-border/40">
           <h2 className="text-2xl font-bold mb-4">
             Interested in a similar project?
