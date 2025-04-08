@@ -1,7 +1,7 @@
 import ProjectDetails from "@/components/project-detail";
 import TechCarousel from "@/components/tech-carousel";
 import ProjectFeatures from "@/components/project-features";
-import ProjectGallery from "@/components/project-gallery";
+// import ProjectGallery from "@/components/project-gallery";
 import { projects } from "../projects";
 
 export default function ALKSoftware() {
@@ -70,12 +70,12 @@ export default function ALKSoftware() {
   ];
   
   // Gallery images
-  const galleryImages = [
-    "/placeholder.svg?height=600&width=800",
-    "/placeholder.svg?height=600&width=800",
-    "/placeholder.svg?height=600&width=800",
-    "/placeholder.svg?height=600&width=800",
-  ];
+  // const galleryImages = [
+  //   "/placeholder.svg?height=600&width=800",
+  //   "/placeholder.svg?height=600&width=800",
+  //   "/placeholder.svg?height=600&width=800",
+  //   "/placeholder.svg?height=600&width=800",
+  // ];
 
   return (
     <div className="flex flex-col w-full bg-gradient-to-b from-background to-background/95 text-foreground py-12 space-y-16">
@@ -105,7 +105,7 @@ export default function ALKSoftware() {
       <ProjectFeatures features={features} />
 
       {/* Project gallery */}
-      <ProjectGallery images={galleryImages} title={project.title} />
+      {/* <ProjectGallery images={galleryImages} title={project.title} /> */}
 
       {/* Call to action */}
       <div className="max-w-4xl mx-auto px-4 text-center mb-20">
