@@ -6,7 +6,7 @@ export const projects = [
       type: "Frontend Development",
       detailsLink: "/works/alk-software",
       projectLink: "https://alk-software.vercel.app/",
-      description: "My role in this project was to develop the ALK Software website from scratch. It uses Next.js, TypeScript, React, TailwindCSS, HTML, and CSS to create a professional and functional online presence.\n\nThe goal is to showcase ALK's services, enhance the user experience, and optimize the site's performance and SEO. The development stages include project setup, site design and layout, implementation of interactive features, and optimization and deployment on a suitable hosting platform."
+      description: "I developed the user interface for ALK Software, a platform that offers customized software solutions, specializing in web and mobile development, along with digital marketing and positioning services. I used React, Next.js, Tailwind CSS, and TypeScript to create an intuitive and responsive user experience. The project included the design and development of customized landing pages, integration of virtual stores, and enterprise management systems, ensuring smooth navigation and an attractive presentation of the services offered."
     },
     {
       title: "WearFashion",
@@ -15,7 +15,7 @@ export const projects = [
       type: "Fullstack Development",
       detailsLink: "/works/wearfashion",
       projectLink: "https://wearfashion.vercel.app/",
-      description: "We developed an urban clothing e-commerce where I took on a leadership role, working on both the backend and frontend.\n\nOn the backend, I created routes and models, implemented a payment gateway, and managed user registration on the website. On the frontend, I integrated the database with various products and users, developed components for an intuitive and visually appealing user interface, and handled user registration and login—from the creation of the page to storing user data in the database and managing permissions within the site.\n\nThis project included the development of a product management system, shopping carts, and an efficient payment process, ensuring a smooth and enjoyable user experience."
+      description: "WearFashion is an urban clothing e-commerce developed as a final group project at SoyHenry. I took on the role of team leader, organizing daily stand-ups, coordinating development sprints, and ensuring constant communication among team members.I worked on both frontend and backend using React, Redux, JavaScript, Sequelize, CSS, Firebase, and PostgreSQL. My tasks included building UI components, managing product and user data integration, and implementing a secure and functional login system. This experience helped me strengthen key soft skills such as teamwork, leadership, communication, and project presentation, especially when showcasing the project to senior evaluators."
     },
     {
       title: "Drivers",
@@ -24,7 +24,7 @@ export const projects = [
       type: "Fullstack Development",
       detailsLink: "/works/drivers",
       projectLink: "https://github.com/alejoborracci21/PI-Drivers",
-      description: "Drivers was an individual project I developed at SoyHenry. Upon entering, the first thing we see is the landing page. Then, we navigate to the main page, where the different drivers stored in the database are displayed.\n\nUsers can filter these drivers by team, age, and name. Additionally, new drivers can be added through a form. Finally, there is an 'About Me' section, where a brief description of the project and myself as a developer is presented."
+      description: "Drivers is an individual project developed during my training at SoyHenry. It is a Single Page Application that allows users to explore, filter, and manage Formula 1 drivers using data from an external API. I designed and built the entire frontend using React, Redux, HTML, CSS, and JavaScript, ensuring a responsive and dynamic user interface. I also created a backend with Sequelize and PostgreSQL to store the drivers created by users through a form. This project helped me gain confidence in connecting APIs, managing global state with Redux, designing user-friendly interfaces, and implementing full CRUD functionality with a relational database."
     },
   ];
   

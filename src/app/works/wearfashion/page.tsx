@@ -58,10 +58,15 @@ export default function Wearfashion() {
         <p className="text-lg leading-relaxed">{project.description}</p>
         <div className="mt-8 p-6 bg-card/30 border border-border/40 rounded-xl">
           <blockquote className="italic text-muted-foreground">
-            This project revolutionized how we manage our internal processes,
-            resulting in a 40% increase in team productivity.
+            “Alejo stood out as a natural leader during the development of this
+            project. He consistently led our daily stand-ups, proposed new
+            features, initiated technical discussions, and supported the entire
+            team with strong communication and collaboration skills. He also
+            wrote a significant portion of the code and confidently presented
+            the project to our reviewers. His teammates were proud to work with
+            him and praised his supportive and professional attitude.”
           </blockquote>
-          <p className="mt-4 font-medium">— Client Testimonial</p>
+          <p className="mt-4 font-medium">— Final Project Reviewer, SoyHenry</p>
         </div>
       </div>
 

@@ -51,10 +51,13 @@ export default function Drivers() {
         <p className="text-lg leading-relaxed">{project.description}</p>
         <div className="mt-8 p-6 bg-card/30 border border-border/40 rounded-xl">
           <blockquote className="italic text-muted-foreground">
-            This project revolutionized how we manage our internal processes,
-            resulting in a 40% increase in team productivity.
+            “Alejo demonstrated excellent communication and soft skills
+            throughout the review. He explained his code clearly, showed
+            confidence in his understanding, and successfully implemented a new
+            feature live during the evaluation. His ability to solve problems
+            and articulate technical decisions is outstanding.”
           </blockquote>
-          <p className="mt-4 font-medium">— Client Testimonial</p>
+          <p className="mt-4 font-medium">— Individual Project Reviewer, SoyHenry</p>
         </div>
       </div>
 

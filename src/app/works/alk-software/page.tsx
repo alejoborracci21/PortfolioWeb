@@ -90,13 +90,6 @@ export default function ALKSoftware() {
           <h2 className="text-3xl font-bold mb-6">About This Project</h2>
         </div>
         <p className="text-lg leading-relaxed">{project.description}</p>
-        <div className="mt-8 p-6 bg-card/30 border border-border/40 rounded-xl">
-          <blockquote className="italic text-muted-foreground">
-            This project revolutionized how we manage our internal processes,
-            resulting in a 40% increase in team productivity.
-          </blockquote>
-          <p className="mt-4 font-medium">— Client Testimonial</p>
-        </div>
       </div>
 
       {/* Technology carousel */}
