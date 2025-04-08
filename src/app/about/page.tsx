@@ -23,7 +23,7 @@ export default function AboutPage() {
               <AvatarFallback>AB</AvatarFallback>
             </Avatar>
             <div className="text-center sm:text-left">
-              <h1 className="text-4xl font-bold">Hi, I'm Alejo 👋</h1>
+              <h1 className="text-4xl font-bold">Hi, I&apos;m Alejo 👋</h1>
               <p className="text-muted-foreground text-lg mt-1">
                 Fullstack Web Developer | Computer Technician
               </p>
@@ -34,13 +34,13 @@ export default function AboutPage() {
 
           <section className="space-y-4 text-base leading-relaxed">
             <p>
-              I'm a fullstack developer with a solid technical foundation and a passion for creating solutions that generate real value. I studied at <strong>Henry Bootcamp</strong>, where I completed over 800 hours of intensive training focused on modern web technologies, agile methodologies, and teamwork. I also hold a degree as a Computer Technician from Technical School 275.
+              I&apos;m a fullstack developer with a solid technical foundation and a passion for creating solutions that generate real value. I studied at <strong>Henry Bootcamp</strong>, where I completed over 800 hours of intensive training focused on modern web technologies, agile methodologies, and teamwork. I also hold a degree as a Computer Technician from Technical School 275.
             </p>
             <p>
-              I'm known for my strengths in <strong>planning</strong>, <strong>active listening</strong>, and <strong>effective communication</strong>. During my experience as a Project Manager at <strong>BIMTRAZER</strong> (Oct 2024 - Feb 2025), I coordinated multidisciplinary teams, led weekly meetings with clients, planned new features using agile methodologies (Scrum), and ensured continuous product improvement.
+              I&apos;m known for my strengths in <strong>planning</strong>, <strong>active listening</strong>, and <strong>effective communication</strong>. During my experience as a Project Manager at <strong>BIMTRAZER</strong> (Oct 2024 - Feb 2025), I coordinated multidisciplinary teams, led weekly meetings with clients, planned new features using agile methodologies (Scrum), and ensured continuous product improvement.
             </p>
             <p>
-              I'm seeking opportunities to grow as a fullstack developer, contributing with my knowledge in technologies like <strong>React, Next.js, Node.js, Nest.js, TypeScript, TailwindCSS</strong>, and databases like <strong>PostgreSQL</strong> and <strong>Firebase</strong>.
+              I&apos;m seeking opportunities to grow as a fullstack developer, contributing with my knowledge in technologies like <strong>React, Next.js, Node.js, Nest.js, TypeScript, TailwindCSS</strong>, and databases like <strong>PostgreSQL</strong> and <strong>Firebase</strong>.
             </p>
             <p>
               I consider myself a <strong>proactive</strong>, <strong>detail-oriented</strong> person with <strong>leadership skills</strong> developed through collaborative work and project coordination. I enjoy teamwork, learning new technologies, and turning ideas into reality.
