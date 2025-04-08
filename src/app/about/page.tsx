@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 export const metadata: Metadata = {
   title: 'About | Alejo Borracci',
-  description: 'Conocé más sobre Alejo Borracci, desarrollador fullstack con experiencia en React, Next.js, Node.js y habilidades en liderazgo, comunicación y trabajo en equipo.',
+  description: 'Learn more about Alejo Borracci, a fullstack developer with experience in React, Next.js, Node.js, and strong skills in leadership, communication, and teamwork.',
 };
 
 export default function AboutPage() {
@@ -23,9 +23,9 @@ export default function AboutPage() {
               <AvatarFallback>AB</AvatarFallback>
             </Avatar>
             <div className="text-center sm:text-left">
-              <h1 className="text-4xl font-bold">Hola, soy Alejo 👋</h1>
+              <h1 className="text-4xl font-bold">Hi, I'm Alejo 👋</h1>
               <p className="text-muted-foreground text-lg mt-1">
-                Desarrollador Web Fullstack | Técnico en Informática
+                Fullstack Web Developer | Computer Technician
               </p>
             </div>
           </div>
@@ -34,50 +34,50 @@ export default function AboutPage() {
 
           <section className="space-y-4 text-base leading-relaxed">
             <p>
-              Soy un desarrollador fullstack con una sólida base técnica y una gran pasión por crear soluciones que aporten valor real. Me formé en la <strong>Academia Henry</strong>, donde completé más de 800 horas de formación intensiva enfocada en tecnologías web modernas, metodologías ágiles y trabajo en equipo. También soy Técnico en Informática, egresado de la Escuela Técnica 275.
+              I'm a fullstack developer with a solid technical foundation and a passion for creating solutions that generate real value. I studied at <strong>Henry Bootcamp</strong>, where I completed over 800 hours of intensive training focused on modern web technologies, agile methodologies, and teamwork. I also hold a degree as a Computer Technician from Technical School 275.
             </p>
             <p>
-              Me destaco por mi capacidad de <strong>planificación</strong>, <strong>escucha activa</strong> y <strong>comunicación efectiva</strong>. Durante mi experiencia como Project Manager en <strong>BIMTRAZER</strong> (Oct 2024 - Feb 2025), coordiné equipos multidisciplinarios, mantuve reuniones semanales con clientes, planifiqué nuevas funcionalidades con metodologías ágiles (Scrum) y aseguré la evolución continua del producto.
+              I'm known for my strengths in <strong>planning</strong>, <strong>active listening</strong>, and <strong>effective communication</strong>. During my experience as a Project Manager at <strong>BIMTRAZER</strong> (Oct 2024 - Feb 2025), I coordinated multidisciplinary teams, led weekly meetings with clients, planned new features using agile methodologies (Scrum), and ensured continuous product improvement.
             </p>
             <p>
-              Busco oportunidades para crecer como desarrollador fullstack, aportando mis conocimientos en tecnologías como <strong>React, Next.js, Node.js, Nest.js, TypeScript, TailwindCSS</strong> y bases de datos como <strong>PostgreSQL</strong> y <strong>Firebase</strong>.
+              I'm seeking opportunities to grow as a fullstack developer, contributing with my knowledge in technologies like <strong>React, Next.js, Node.js, Nest.js, TypeScript, TailwindCSS</strong>, and databases like <strong>PostgreSQL</strong> and <strong>Firebase</strong>.
             </p>
             <p>
-              Me considero una persona <strong>proactiva</strong>, <strong>orientada al detalle</strong> y con habilidades de <strong>liderazgo</strong> desarrolladas a través del trabajo colaborativo y la gestión de proyectos. Disfruto trabajar en equipo, aprender nuevas tecnologías y llevar ideas a la realidad.
+              I consider myself a <strong>proactive</strong>, <strong>detail-oriented</strong> person with <strong>leadership skills</strong> developed through collaborative work and project coordination. I enjoy teamwork, learning new technologies, and turning ideas into reality.
             </p>
           </section>
 
           <Separator />
 
           <section className="space-y-4">
-            <h2 className="text-xl font-semibold">Proyectos destacados</h2>
+            <h2 className="text-xl font-semibold">Featured Projects</h2>
             <ul className="list-disc list-inside text-muted-foreground space-y-1">
-              <li><strong>Wearfashion:</strong> Ecommerce como proyecto final en Henry. Lideré sprints ágiles y participé en el desarrollo fullstack. (JavaScript, React, Redux, PostgreSQL, Sequelize, Firebase)</li>
-              <li><strong>ALK Software:</strong> Plataforma para creación de sitios web orientada a usuarios sin conocimientos técnicos. Desarrollo frontend con TypeScript, Next.js, TailwindCSS.</li>
-              <li><strong>Drivers:</strong> Aplicación con integración de API externa, CRUD completo y diseño UI. (React, Express, PostgreSQL)</li>
+              <li><strong>Wearfashion:</strong> Final group project at Henry Bootcamp. I led agile sprints and contributed to fullstack development. (JavaScript, React, Redux, PostgreSQL, Sequelize, Firebase)</li>
+              <li><strong>ALK Software:</strong> Web creation platform targeted at non-technical users. Frontend developed using TypeScript, Next.js, TailwindCSS.</li>
+              <li><strong>Drivers:</strong> Application integrating external API, full CRUD, and UI design. (React, Express, PostgreSQL)</li>
             </ul>
           </section>
 
           <Separator />
 
           <section className="space-y-2">
-            <h2 className="text-xl font-semibold">Tecnologías y herramientas</h2>
+            <h2 className="text-xl font-semibold">Technologies & Tools</h2>
             <ul className="list-disc list-inside text-muted-foreground space-y-1">
               <li>Frontend: React, Next.js, TypeScript, TailwindCSS</li>
               <li>Backend: Node.js, Nest.js, Express</li>
-              <li>Base de datos: PostgreSQL, Sequelize, Firebase</li>
-              <li>Control de versiones: Git, GitHub</li>
-              <li>Metodologías ágiles: Scrum</li>
+              <li>Databases: PostgreSQL, Sequelize, Firebase</li>
+              <li>Version Control: Git, GitHub</li>
+              <li>Agile methodologies: Scrum</li>
             </ul>
           </section>
 
           <Separator />
 
           <section className="space-y-2">
-            <h2 className="text-xl font-semibold">Idiomas</h2>
+            <h2 className="text-xl font-semibold">Languages</h2>
             <ul className="list-disc list-inside text-muted-foreground space-y-1">
-              <li>Español (Nativo)</li>
-              <li>Inglés (Intermedio)</li>
+              <li>Spanish (Native)</li>
+              <li>English (Intermediate)</li>
             </ul>
           </section>
         </CardContent>
