@@ -1,25 +1,25 @@
-import { Suspense } from "react"
+import { Suspense } from "react";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center text-white">
-      <Suspense fallback={<div className="text-2xl">Loading...</div>}>
+      <Suspense fallback={<div className="text-2xl">Cargando...</div>}>
         <div className="text-center space-y-4 mb-20">
           <h1 className="text-4xl md:text-6xl font-bold tracking-wider">
-            HELLO. I&apos;M <span className="text-accent">ALEJO BORRACCI</span>.
+            HOLA. SOY <span className="text-accent">ALEJO BORRACCI</span>.
           </h1>
           <h2 className="text-2xl md:text-4xl font-bold tracking-wider text-zinc-300">
-            FULL STACKS WEB DEVELOPER.
+            DESARROLLADOR WEB FULL STACK.
           </h2>
         </div>
 
         <div className="max-w-3xl mx-auto px-4 w-full">
           {[
-            { num: "01", text: "See my works", href: "/works" },
-            { num: "02", text: "More about me", href: "/about" },
+            { num: "01", text: "Ver mis trabajos", href: "/works" },
+            { num: "02", text: "Más sobre mí", href: "/about" },
             {
               num: "03",
-              text: "Send me a message",
+              text: "Envíame un mensaje",
               href: "mailto:alejotrabajo2001@hotmail.com",
             },
           ].map((item) => (
@@ -40,4 +40,3 @@ export default function Home() {
     </main>
   );
 }
-

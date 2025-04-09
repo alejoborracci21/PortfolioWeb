@@ -25,7 +25,7 @@ export default function ProjectGallery({ images, title }: ProjectGalleryProps) {
 
   return (
     <div className="w-full max-w-4xl mx-auto py-12">
-      <h2 className="text-2xl font-bold text-center mb-8">Project Gallery</h2>
+      <h2 className="text-2xl font-bold text-center mb-8">Galería del Proyecto</h2>
 
       <div className="relative rounded-xl overflow-hidden bg-black/5 aspect-video">
         <AnimatePresence mode="wait">
@@ -55,7 +55,7 @@ export default function ProjectGallery({ images, title }: ProjectGalleryProps) {
             className="h-10 w-10 rounded-full bg-black/20 text-white backdrop-blur-sm hover:bg-black/40"
           >
             <ChevronLeft className="h-6 w-6" />
-            <span className="sr-only">Previous image</span>
+            <span className="sr-only">Imagen anterior</span>
           </Button>
 
           <Button
@@ -65,7 +65,7 @@ export default function ProjectGallery({ images, title }: ProjectGalleryProps) {
             className="h-10 w-10 rounded-full bg-black/20 text-white backdrop-blur-sm hover:bg-black/40"
           >
             <ChevronRight className="h-6 w-6" />
-            <span className="sr-only">Next image</span>
+            <span className="sr-only">Siguiente imagen</span>
           </Button>
         </div>
 
@@ -78,7 +78,7 @@ export default function ProjectGallery({ images, title }: ProjectGalleryProps) {
               className="absolute top-4 right-4 h-8 w-8 rounded-full bg-black/20 text-white backdrop-blur-sm hover:bg-black/40"
             >
               <Maximize2 className="h-4 w-4" />
-              <span className="sr-only">View fullscreen</span>
+              <span className="sr-only">Ver en pantalla completa</span>
             </Button>
           </DialogTrigger>
           <DialogContent className="max-w-6xl h-[80vh] p-0 bg-black/90">

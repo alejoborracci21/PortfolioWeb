@@ -56,7 +56,7 @@ export function DarkNavbar() {
               className="bg-zinc-800 border-zinc-700 text-white"
               hidden={activeTooltip !== "show"}
             >
-              <p>Show Navbar</p>
+              <p>Mostrar Barra de Navegación</p>
             </TooltipContent>
           </Tooltip>
         </div>
@@ -78,7 +78,7 @@ export function DarkNavbar() {
             id="back"
             icon={<ArrowLeft size={18} />}
             onClick={() => router.back()}
-            tooltip="Go Back"
+            tooltip="Volver"
             activeTooltip={activeTooltip}
             setActiveTooltip={setActiveTooltip}
           />
@@ -88,7 +88,7 @@ export function DarkNavbar() {
             id="home"
             icon={<Home size={18} />} 
             onClick={() => router.push("/")} 
-            tooltip="Home"
+            tooltip="Inicio"
             activeTooltip={activeTooltip}
             setActiveTooltip={setActiveTooltip}
           />
@@ -96,7 +96,7 @@ export function DarkNavbar() {
             id="works"
             icon={<BriefcaseBusiness size={18} />}
             onClick={() => router.push("/works")}
-            tooltip="Works"
+            tooltip="Trabajos"
             activeTooltip={activeTooltip}
             setActiveTooltip={setActiveTooltip}
           />
@@ -104,7 +104,7 @@ export function DarkNavbar() {
             id="about"
             icon={<User size={18} />} 
             onClick={() => router.push("/about")} 
-            tooltip="About me"
+            tooltip="Sobre mí"
             activeTooltip={activeTooltip}
             setActiveTooltip={setActiveTooltip}
           />
@@ -112,7 +112,7 @@ export function DarkNavbar() {
             <NavButton 
               id="contact"
               icon={<Send size={18} />} 
-              tooltip="Contact me"
+              tooltip="Contáctame"
               activeTooltip={activeTooltip}
               setActiveTooltip={setActiveTooltip}
             />
@@ -123,7 +123,7 @@ export function DarkNavbar() {
             id="hide"
             icon={<EyeOff size={18} />}
             onClick={toggleNavbar}
-            tooltip="Hide Navbar"
+            tooltip="Ocultar Barra de Navegación"
             activeTooltip={activeTooltip}
             setActiveTooltip={setActiveTooltip}
           />

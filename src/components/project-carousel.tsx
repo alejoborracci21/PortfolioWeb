@@ -171,7 +171,7 @@ export default function ProjectCarousel({
             disabled={isTransitioning}
           >
             <ChevronLeft className="h-6 w-6" />
-            <span className="sr-only">Previous</span>
+            <span className="sr-only">Anterior</span>
           </Button>
 
           <Button
@@ -182,7 +182,7 @@ export default function ProjectCarousel({
             disabled={isTransitioning}
           >
             <ChevronRight className="h-6 w-6" />
-            <span className="sr-only">Next</span>
+            <span className="sr-only">Siguiente</span>
           </Button>
         </div>
       )}
@@ -213,7 +213,7 @@ export default function ProjectCarousel({
         onClick={togglePlayPause}
       >
         {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
-        <span className="sr-only">{isPlaying ? "Pause" : "Play"}</span>
+        <span className="sr-only">{isPlaying ? "Pausar" : "Reproducir"}</span>
       </Button>
     </div>
   )

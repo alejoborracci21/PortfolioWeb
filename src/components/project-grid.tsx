@@ -41,9 +41,17 @@ export default function ProjectGrid({ projects, categories = [] }: ProjectGridPr
                   : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
               }`}
             >
-              {category}
+              {category === "All" ? "Todos" : category}
             </button>
           ))}
+        </div>
+      )}
+
+      {filteredProjects.length === 0 && (
+        <div className="text-center py-12">
+          <p className="text-muted-foreground">
+            No se encontraron proyectos en esta categoría.
+          </p>
         </div>
       )}
 
@@ -69,9 +77,11 @@ export default function ProjectGrid({ projects, categories = [] }: ProjectGridPr
       {/* Empty State */}
       {filteredProjects.length === 0 && (
         <div className="text-center py-12">
-          <p className="text-muted-foreground">No projects found in this category.</p>
+          <p className="text-muted-foreground">
+            No projects found in this category.
+          </p>
         </div>
       )}
     </div>
-  )
+  );
 }

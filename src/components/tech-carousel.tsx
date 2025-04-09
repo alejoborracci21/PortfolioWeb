@@ -32,7 +32,7 @@ export default function TechCarousel({ technologies }: TechCarouselProps) {
 
       <div className="relative max-w-4xl mx-auto">
         <h2 className="text-2xl font-bold text-center mb-8">
-          Technologies Used
+        Tecnologías Utilizadas
         </h2>
 
         <div className="flex justify-center items-center gap-8 flex-wrap">
