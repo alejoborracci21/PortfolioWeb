@@ -34,11 +34,11 @@ export default function ProjectDetails({
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">{title}</h1>
           <div className="flex gap-4 mt-2 text-muted-foreground">
             <div className="flex items-center gap-2">
-              <span className="text-sm">Client:</span>
+              <span className="text-sm">Cliente:</span>
               <span className="text-sm font-medium text-foreground">{client}</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-sm">Year:</span>
+              <span className="text-sm">Año:</span>
               <span className="text-sm font-medium text-foreground">{date}</span>
             </div>
           </div>
@@ -49,7 +49,7 @@ export default function ProjectDetails({
             <Button variant="outline" size="sm" asChild>
               <Link href={githubLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <Github size={16} />
-                <span>Source Code</span>
+                <span>Codigo</span>
               </Link>
             </Button>
           )}
@@ -57,7 +57,7 @@ export default function ProjectDetails({
           {projectLink && (
             <Button size="sm" asChild>
               <Link href={projectLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                <span>Visit Project</span>
+                <span>Sitio web</span>
                 <ArrowUpRight size={16} />
               </Link>
             </Button>
