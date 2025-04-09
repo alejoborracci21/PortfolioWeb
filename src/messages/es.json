@@ -1,0 +1,12 @@
+{
+  "home": {
+    "title": "HOLA. SOY",
+    "name": "ALEJO BORRACCI.",
+    "subtitle": "DESARROLLADOR WEB FULL STACK",
+    "links": {
+      "works": "Ver mis trabajos",
+      "about": "Sobre mí",
+      "contact": "Contacto"
+    }
+  }
+}

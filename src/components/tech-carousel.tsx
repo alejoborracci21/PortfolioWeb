@@ -63,7 +63,7 @@ export default function TechCarousel({ technologies }: TechCarouselProps) {
                   className="absolute -bottom-1 left-0 right-0 h-0.5 bg-accent"
                   layoutId="activeIndicator"
                   transition={{
-                    duration: 0.2,
+                    duration: 0.2, 
                     ease: "easeInOut", 
                   }}
                 />

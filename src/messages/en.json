@@ -1,0 +1,12 @@
+{
+  "home": {
+    "title": "HELLO. I'M",
+    "name": "ALEJO BORRACCI.",
+    "subtitle": "FULL STACKS WEB DEVELOPER",
+    "links": {
+      "works": "View my work",
+      "about": "About me",
+      "contact": "Contact"
+    }
+  }
+}

@@ -1,40 +1,68 @@
-"use client"
+"use client";
 
-import { useRouter } from "next/navigation"
-import { useState, useEffect } from "react"
-import { Home, BriefcaseBusiness, User, Send, ArrowLeft, EyeOff, Eye } from 'lucide-react'
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+import { useRouter, usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
+import {
+  Home,
+  BriefcaseBusiness,
+  User,
+  Send,
+  ArrowLeft,
+  EyeOff,
+  Eye,
+} from "lucide-react";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export function DarkNavbar() {
-  const router = useRouter()
-  const [currentTime, setCurrentTime] = useState<string>("")
-  const [isVisible, setIsVisible] = useState<boolean>(true)
-  const [activeTooltip, setActiveTooltip] = useState<string | null>(null)
+  const router = useRouter();
+  const pathname = usePathname();
+  const [currentTime, setCurrentTime] = useState<string>("");
+  const [isVisible, setIsVisible] = useState<boolean>(true);
+  const [activeTooltip, setActiveTooltip] = useState<string | null>(null);
 
   useEffect(() => {
     const updateTime = () => {
-      const now = new Date()
-      const hours = now.getHours().toString().padStart(2, "0")
-      const minutes = now.getMinutes().toString().padStart(2, "0")
-      const seconds = now.getSeconds().toString().padStart(2, "0")
-      setCurrentTime(`${hours}:${minutes}:${seconds} ${now.getHours() >= 12 ? "p.m." : "a.m."}`)
-    }
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, "0");
+      const minutes = now.getMinutes().toString().padStart(2, "0");
+      const seconds = now.getSeconds().toString().padStart(2, "0");
+      setCurrentTime(
+        `${hours}:${minutes}:${seconds} ${
+          now.getHours() >= 12 ? "p.m." : "a.m."
+        }`
+      );
+    };
 
-    updateTime()
-    const interval = setInterval(updateTime, 1000)
-    return () => clearInterval(interval)
-  }, [])
+    updateTime();
+    const interval = setInterval(updateTime, 1000);
+    return () => clearInterval(interval);
+  }, []);
 
   const toggleNavbar = () => {
     document.startViewTransition(() => {
-      setIsVisible((prev) => !prev)
-    })
-  }
+      setIsVisible((prev) => !prev);
+    });
+  };
+
+  const toggleLocale = () => {
+    const segments = pathname.split("/");
+    const currentLocale = segments[1];
+    const newLocale = currentLocale === "en" ? "es" : "en";
+
+    segments[1] = newLocale;
+    const newPath = segments.join("/");
+
+    router.push(newPath);
+  };
 
   if (!isVisible) {
-    // Botón para mostrar la navbar cuando está oculta
     return (
       <TooltipProvider>
         <div className="fixed top-1/2 right-4 transform -translate-y-1/2 z-50">
@@ -51,8 +79,8 @@ export function DarkNavbar() {
                 <Eye size={18} />
               </Button>
             </TooltipTrigger>
-            <TooltipContent 
-              side="left" 
+            <TooltipContent
+              side="left"
               className="bg-zinc-800 border-zinc-700 text-white"
               hidden={activeTooltip !== "show"}
             >
@@ -61,19 +89,20 @@ export function DarkNavbar() {
           </Tooltip>
         </div>
       </TooltipProvider>
-    )
+    );
   }
 
   return (
     <TooltipProvider>
-      <div className="fixed top-4 left-4 text-zinc-400 text-sm font-mono">{currentTime}</div>
+      <div className="fixed top-4 left-4 text-zinc-400 text-sm font-mono">
+        {currentTime}
+      </div>
 
       <div
         id="navbar-container"
         className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 view-transition-name-navbar"
       >
         <div className="flex items-center gap-4 p-2 bg-zinc-900/90 backdrop-blur-sm rounded border border-zinc-800">
-          {/* Botón para volver a la página anterior */}
           <NavButton
             id="back"
             icon={<ArrowLeft size={18} />}
@@ -83,11 +112,10 @@ export function DarkNavbar() {
             setActiveTooltip={setActiveTooltip}
           />
 
-          {/* Botones de navegación */}
-          <NavButton 
+          <NavButton
             id="home"
-            icon={<Home size={18} />} 
-            onClick={() => router.push("/")} 
+            icon={<Home size={18} />}
+            onClick={() => router.push("/")}
             tooltip="Home"
             activeTooltip={activeTooltip}
             setActiveTooltip={setActiveTooltip}
@@ -100,25 +128,38 @@ export function DarkNavbar() {
             activeTooltip={activeTooltip}
             setActiveTooltip={setActiveTooltip}
           />
-          <NavButton 
+          <NavButton
             id="about"
-            icon={<User size={18} />} 
-            onClick={() => router.push("/about")} 
+            icon={<User size={18} />}
+            onClick={() => router.push("/about")}
             tooltip="About me"
             activeTooltip={activeTooltip}
             setActiveTooltip={setActiveTooltip}
           />
           <a href="mailto:alejotrabajo2001@hotmail.com">
-            <NavButton 
+            <NavButton
               id="contact"
-              icon={<Send size={18} />} 
+              icon={<Send size={18} />}
               tooltip="Contact me"
               activeTooltip={activeTooltip}
               setActiveTooltip={setActiveTooltip}
             />
           </a>
 
-          {/* Botón para ocultar la navbar */}
+          {/* Language switch button */}
+          <NavButton
+            id="lang"
+            icon={
+              <span className="text-xs font-bold">
+                {pathname.includes("/es") ? "EN" : "ES"}
+              </span>
+            }
+            onClick={toggleLocale}
+            tooltip="Change language"
+            activeTooltip={activeTooltip}
+            setActiveTooltip={setActiveTooltip}
+          />
+
           <NavButton
             id="hide"
             icon={<EyeOff size={18} />}
@@ -130,7 +171,7 @@ export function DarkNavbar() {
         </div>
       </div>
     </TooltipProvider>
-  )
+  );
 }
 
 interface NavButtonProps {
@@ -143,7 +184,15 @@ interface NavButtonProps {
   setActiveTooltip: (id: string | null) => void;
 }
 
-export function NavButton({ id, icon, active = false, onClick, tooltip, activeTooltip, setActiveTooltip }: NavButtonProps) {
+export function NavButton({
+  id,
+  icon,
+  active = false,
+  onClick,
+  tooltip,
+  activeTooltip,
+  setActiveTooltip,
+}: NavButtonProps) {
   const button = (
     <Button
       variant="ghost"
@@ -164,8 +213,8 @@ export function NavButton({ id, icon, active = false, onClick, tooltip, activeTo
     return (
       <Tooltip>
         <TooltipTrigger asChild>{button}</TooltipTrigger>
-        <TooltipContent 
-          side="top" 
+        <TooltipContent
+          side="top"
           className="bg-zinc-800 border-zinc-700 text-white"
           hidden={activeTooltip !== id}
         >
