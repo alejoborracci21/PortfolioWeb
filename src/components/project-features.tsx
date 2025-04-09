@@ -12,7 +12,7 @@ interface ProjectFeaturesProps {
 export default function ProjectFeatures({ features }: ProjectFeaturesProps) {
   return (
     <div className="w-full max-w-4xl mx-auto py-12">
-      <h2 className="text-2xl font-bold text-center mb-8">Key Features</h2>
+      <h2 className="text-2xl font-bold text-center mb-8">Características principales</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {features.map((feature, index) => (
