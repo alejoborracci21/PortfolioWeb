@@ -15,7 +15,7 @@ export default function Home() {
 
         <div className="max-w-3xl mx-auto px-4 w-full">
           {[
-            { num: "01", text: "Ver mis trabajos", href: "/works" },
+            { num: "01", text: "Mis proyectos", href: "/works" },
             { num: "02", text: "Más sobre mí", href: "/about" },
             {
               num: "03",
