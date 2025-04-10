@@ -4,6 +4,7 @@ import { Separator } from "@/components/ui/separator"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Download, Linkedin, Github, Twitter } from "lucide-react"
+import ExperienciaProfesional from "@/components/experience"
 
 export const metadata: Metadata = {
   title: "Acerca de | Alejo Borracci",
@@ -97,6 +98,11 @@ export default function AboutPage() {
               realidad.
             </p>
           </section>
+
+          <Separator />
+
+          {/* Componente de Experiencia Profesional */}
+          <ExperienciaProfesional />
 
           <Separator />
 
