@@ -73,15 +73,6 @@ export default function ProjectGrid({ projects, categories = [] }: ProjectGridPr
           ))}
         </AnimatePresence>
       </div>
-
-      {/* Empty State */}
-      {filteredProjects.length === 0 && (
-        <div className="text-center py-12">
-          <p className="text-muted-foreground">
-            No projects found in this category.
-          </p>
-        </div>
-      )}
     </div>
   );
 }
