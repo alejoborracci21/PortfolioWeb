@@ -24,7 +24,7 @@ const experiencias: ExperienciaItem[] = [
     año: "2024",
     puesto: "Project Manager",
     sitioWeb: "bimtrazer.com",
-    descripcion: "Gestión y coordinación de equipos multidisciplinarios en un entorno ágil. Planificación, priorización y seguimiento de nuevas funcionalidades del producto. Organización de sprints, reuniones con stakeholders y seguimiento continuo del avance mediante la herramienta Monday. Aplicación de metodologías ágiles (Scrum) para asegurar la mejora continua y la entrega de valor constante.",
+    descripcion: "Lideré la gestión de equipos multidisciplinarios en un entorno ágil, coordinando la planificación y priorización de nuevas funcionalidades. Organicé reuniones semanales con clientes y el equipo, definí y seguí sprints, y realicé el seguimiento continuo del avance de los proyectos utilizando Monday. Apliqué metodologías ágiles (Scrum) para impulsar la mejora continua del producto y asegurar entregas de valor constantes.",
     tecnologias: ["Scrum", "Monday", "Inteligencia artificial", "Microservicios", "Blockchain", "Planificacion"]
   }
 ]
