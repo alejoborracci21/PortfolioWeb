@@ -5,10 +5,10 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center text-white">
       <Suspense fallback={<div className="text-2xl">Cargando...</div>}>
         <div className="text-center space-y-4 mb-20">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-wider">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-wider animate__animated animate__backInDown animate__delay-1s">
             HOLA. SOY <span className="text-accent">ALEJO BORRACCI</span>.
           </h1>
-          <h2 className="text-2xl md:text-4xl font-bold tracking-wider text-zinc-300">
+          <h2 className="text-2xl md:text-4xl font-bold tracking-wider text-zinc-300 animate__animated animate__backInDown animate__delay-1s">
             DESARROLLADOR WEB FULL STACK.
           </h2>
         </div>
@@ -26,8 +26,7 @@ export default function Home() {
             <a
               key={item.num}
               href={item.href}
-              className="flex items-center justify-between p-4 border border-zinc-800 rounded-lg hover:bg-zinc-900/50 hover:border-accent transition-all mb-4 text-white"
-            >
+              className="flex items-center justify-between p-4 border border-zinc-800 rounded-lg hover:bg-zinc-900/50 hover:border-accent transition-all mb-4 animate__animated animate__backInLeft text-white animate__delay-1s">
               <div className="flex items-center gap-4">
                 <span className="text-zinc-400">{item.num}</span>
                 <span>{item.text}</span>
