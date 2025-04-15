@@ -37,7 +37,7 @@ export function DarkNavbar() {
     // Botón para mostrar la navbar cuando está oculta
     return (
       <TooltipProvider>
-        <div className="fixed top-1/2 right-4 transform -translate-y-1/2 z-50">
+        <div className="fixed top-1/2 right-4 transform -translate-y-1/2 z-50 animate__delay-1s">
           <Tooltip>
             <TooltipTrigger asChild>
               <Button
@@ -66,7 +66,7 @@ export function DarkNavbar() {
 
   return (
     <TooltipProvider>
-      <div className="fixed top-4 left-4 text-zinc-400 text-sm font-mono">{currentTime}</div>
+      <div className="fixed top-4 left-4 text-zinc-400 text-sm font-mono ">{currentTime}</div>
 
       <div
         id="navbar-container"
