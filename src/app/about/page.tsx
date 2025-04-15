@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="max-w-7xl mx-auto px-4 py-12 bg-transparent">
-      <Card className="border-none shadow-none bg-transparent">
+    <main className="max-w-7xl mx-auto px-4 py-12 bg-transparent animate__animated animate__fadeIn animate__delay-1s">
+      <Card className="border-none shadow-none bg-transparent ">
         <CardContent className="space-y-8">
           <div className="flex flex-col sm:flex-row items-center gap-6">
             <Avatar className="h-40 w-40">
