@@ -10,7 +10,7 @@ export const projects = [
   },
   {
     title: "WearFashion",
-    tag: "Node.js • React • Redux • PostgreSQL • Sequelize • Express • Firebase",
+    tag: "Node.js • React • Redux • PostgreSQL • Sequelize • Express • Firebase • Javascript • CSS",
     imageUrl: "/images/Wearfashion.png",
     type: "Fullstack",
     detailsLink: "/works/wearfashion",
@@ -19,11 +19,11 @@ export const projects = [
   },
   {
     title: "Drivers",
-    tag: "Node.js • React • Redux • Express • PostgreSQL",
+    tag: "Node.js • React • Redux • Express • PostgreSQL • Javascript • CSS",
     imageUrl: "/images/henry.jpg",
     type: "Fullstack",
     detailsLink: "/works/drivers",
     projectLink: "https://github.com/alejoborracci21/PI-Drivers",
     description: "Drivers es un proyecto individual desarrollado durante mi formación en SoyHenry. Es una aplicación de una sola página (SPA) que permite a los usuarios explorar, filtrar y gestionar pilotos de Fórmula 1 utilizando datos de una API externa. Diseñé y construí todo el frontend utilizando React, Redux, HTML, CSS y JavaScript, asegurando una interfaz de usuario responsiva y dinámica. También creé un backend con Sequelize y PostgreSQL para almacenar los pilotos creados por los usuarios a través de un formulario. Este proyecto me ayudó a ganar confianza en la conexión con APIs, gestión de estado global con Redux, diseño de interfaces amigables y la implementación de funcionalidad CRUD completa con una base de datos relacional."
-  },
+  }
 ];
