@@ -31,8 +31,8 @@ export const projects = [
     tag: "PHP • SQL Server • WebEngine CMS • HTML • CSS • cPanel",
     imageUrl: "/images/mu.png",
     type: "Fullstack",
-    detailsLink: "/works/mu-online-server", // Ruta interna de detalles, si tenés una sección
-    projectLink: "", // Si no es público, podés dejarlo vacío o eliminar la propiedad
-    description: "Configure e implementé un servidor privado de MU Online Season 6 para un cliente. El proyecto incluyó la configuración del servidor, integración de WebEngine CMS con la base de datos del juego, desarrollo de un módulo de tienda que entrega ítems al baúl de los personajes y la implementación de rankings dinámicos. También trabajé en la personalización de la plantilla web, resolución de errores relacionados con permisos del servidor y configuración de archivos .htaccess. Fue un desafío técnico importante, ya que trabajé con tecnologías nuevas como SQL Server y PHP, aprendiendo a resolver problemas reales en producción sin experiencia previa."
+    detailsLink: "/works/mu-online-server",
+    projectLink: "https://muargentinafusion.online/",
+    description: "Configuré e implementé un servidor privado de MU Online Season 6 para un cliente. El proyecto incluyó la configuración del servidor, integración de WebEngine CMS con la base de datos del juego, desarrollo de un módulo de tienda que entrega ítems al baúl de los personajes y la implementación de rankings dinámicos. También trabajé en la personalización de la plantilla web, resolución de errores relacionados con permisos del servidor y configuración de archivos .htaccess. Fue un desafío técnico importante, ya que trabajé con tecnologías nuevas como SQL Server y PHP, aprendiendo a resolver problemas reales en producción sin experiencia previa."
   }
 ];
