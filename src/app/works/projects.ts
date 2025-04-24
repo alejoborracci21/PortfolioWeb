@@ -25,5 +25,14 @@ export const projects = [
     detailsLink: "/works/drivers",
     projectLink: "https://github.com/alejoborracci21/PI-Drivers",
     description: "Drivers es un proyecto individual desarrollado durante mi formación en SoyHenry. Es una aplicación de una sola página (SPA) que permite a los usuarios explorar, filtrar y gestionar pilotos de Fórmula 1 utilizando datos de una API externa. Diseñé y construí todo el frontend utilizando React, Redux, HTML, CSS y JavaScript, asegurando una interfaz de usuario responsiva y dinámica. También creé un backend con Sequelize y PostgreSQL para almacenar los pilotos creados por los usuarios a través de un formulario. Este proyecto me ayudó a ganar confianza en la conexión con APIs, gestión de estado global con Redux, diseño de interfaces amigables y la implementación de funcionalidad CRUD completa con una base de datos relacional."
+  },
+  {
+    title: "MU Online S6 - Servidor Privado",
+    tag: "PHP • SQL Server • WebEngine CMS • HTML • CSS • cPanel",
+    imageUrl: "/images/mu.png",
+    type: "Fullstack",
+    detailsLink: "/works/mu-online-server", // Ruta interna de detalles, si tenés una sección
+    projectLink: "", // Si no es público, podés dejarlo vacío o eliminar la propiedad
+    description: "Configure e implementé un servidor privado de MU Online Season 6 para un cliente. El proyecto incluyó la configuración del servidor, integración de WebEngine CMS con la base de datos del juego, desarrollo de un módulo de tienda que entrega ítems al baúl de los personajes y la implementación de rankings dinámicos. También trabajé en la personalización de la plantilla web, resolución de errores relacionados con permisos del servidor y configuración de archivos .htaccess. Fue un desafío técnico importante, ya que trabajé con tecnologías nuevas como SQL Server y PHP, aprendiendo a resolver problemas reales en producción sin experiencia previa."
   }
 ];
