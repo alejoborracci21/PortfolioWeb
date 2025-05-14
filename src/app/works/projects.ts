@@ -34,5 +34,14 @@ export const projects = [
     detailsLink: "/works/mu-online-server",
     projectLink: "https://muargentinafusion.online/",
     description: "Configuré e implementé un servidor privado de MU Online Season 6 para un cliente. El proyecto incluyó la configuración del servidor, integración de WebEngine CMS con la base de datos del juego, desarrollo de un módulo de tienda que entrega ítems al baúl de los personajes y la implementación de rankings dinámicos. También trabajé en la personalización de la plantilla web, resolución de errores relacionados con permisos del servidor y configuración de archivos .htaccess. Fue un desafío técnico importante, ya que trabajé con tecnologías nuevas como SQL Server y PHP, aprendiendo a resolver problemas reales en producción sin experiencia previa."
-  }
+  },
+{
+  title: "ContentAI - NoCountry",
+  tag: "Next.js • NestJS • TypeScript • Firebase • SQL • Inteligencia Artificial",
+  imageUrl: "/images/contentai.png",
+  type: "Fullstack",
+  detailsLink: "/works/contentai",
+  projectLink: "https://content-ai-chi.vercel.app/",
+  description: "ContentAI fue un proyecto express desarrollado en tan solo 5 días como parte de una colaboración en NoCountry. La plataforma permite crear artículos de forma manual o generarlos automáticamente con inteligencia artificial, proporcionando parámetros como nicho, tema, longitud y formato. Utilizamos dos modelos de IA gratuitos con fallback automático para garantizar disponibilidad. Participé en el desarrollo del frontend con Next.js, la configuración del backend con NestJS, autenticación con Firebase, y una base de datos SQL. Implementamos una landing page, gestión de usuarios, una sección para artículos personales y un foro comunitario donde se publican todos los artículos generados por los usuarios."
+}
 ];

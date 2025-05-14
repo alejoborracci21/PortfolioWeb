@@ -28,7 +28,9 @@ export default function AboutPage() {
             </Avatar>
             <div className="text-center sm:text-left space-y-3">
               <h1 className="text-4xl font-bold">Hola, soy Alejo 👋</h1>
-              <p className="text-muted-foreground text-lg">Desarrollador Web Fullstack | Técnico en Computación</p>
+              <p className="text-muted-foreground text-lg">
+                Desarrollador Web Fullstack | Técnico en Computación
+              </p>
               <div className="flex flex-wrap gap-2">
                 <Button variant="outline" className="gap-2" asChild>
                   <a href="/AlejoB.CV.pdf" download>
@@ -74,28 +76,39 @@ export default function AboutPage() {
 
           <section className="space-y-4 text-base leading-relaxed">
             <p>
-              Soy un desarrollador fullstack con una sólida base técnica y una pasión por crear soluciones que generen
-              valor real. Estudié en <strong>Henry Bootcamp</strong>, donde completé más de 800 horas de formación
-              intensiva enfocada en tecnologías web modernas, metodologías ágiles y trabajo en equipo. También tengo un
-              título como Técnico en Computación de la Escuela Técnica 275.
+              Soy un desarrollador fullstack con una sólida base técnica y una
+              pasión por crear soluciones que generen valor real. Estudié en{" "}
+              <strong>Henry Bootcamp</strong>, donde completé más de 800 horas
+              de formación intensiva enfocada en tecnologías web modernas,
+              metodologías ágiles y trabajo en equipo. También tengo un título
+              como Técnico en Computación de la Escuela Técnica 275.
             </p>
             <p>
-              Me destaco por mis fortalezas en <strong>planificación</strong>, <strong>escucha activa</strong> y{" "}
-              <strong>comunicación efectiva</strong>. Durante mi experiencia como Project Manager en{" "}
-              <strong>BIMTRAZER</strong> (Oct 2024 - Feb 2025), coordiné equipos multidisciplinarios, lideré reuniones
-              semanales con clientes, planifiqué nuevas funcionalidades utilizando metodologías ágiles (Scrum) y aseguré
-              la mejora continua del producto.
+              Me destaco por mis fortalezas en <strong>planificación</strong>,{" "}
+              <strong>escucha activa</strong> y{" "}
+              <strong>comunicación efectiva</strong>. Durante mi experiencia
+              como Project Manager en <strong>BIMTRAZER</strong> (Oct 2024 - Feb
+              2025), coordiné equipos multidisciplinarios, lideré reuniones
+              semanales con clientes, planifiqué nuevas funcionalidades
+              utilizando metodologías ágiles (Scrum) y aseguré la mejora
+              continua del producto.
             </p>
             <p>
-              Estoy buscando oportunidades para crecer como desarrollador fullstack, contribuyendo con mis conocimientos
-              en tecnologías como <strong>React, Next.js, Node.js, Nest.js, TypeScript, TailwindCSS</strong> y bases de
-              datos como <strong>PostgreSQL</strong> y <strong>Firebase</strong>.
+              Estoy buscando oportunidades para crecer como desarrollador
+              fullstack, contribuyendo con mis conocimientos en tecnologías como{" "}
+              <strong>
+                React, Next.js, Node.js, Nest.js, TypeScript, TailwindCSS
+              </strong>{" "}
+              y bases de datos como <strong>PostgreSQL</strong> y{" "}
+              <strong>Firebase</strong>.
             </p>
             <p>
-              Me considero una persona <strong>proactiva</strong>, <strong>detallista</strong> y con{" "}
-              <strong>habilidades de liderazgo</strong> desarrolladas a través del trabajo colaborativo y la
-              coordinación de proyectos. Disfruto trabajar en equipo, aprender nuevas tecnologías y convertir ideas en
-              realidad.
+              Me considero una persona <strong>proactiva</strong>,{" "}
+              <strong>detallista</strong> y con{" "}
+              <strong>habilidades de liderazgo</strong> desarrolladas a través
+              del trabajo colaborativo y la coordinación de proyectos. Disfruto
+              trabajar en equipo, aprender nuevas tecnologías y convertir ideas
+              en realidad.
             </p>
           </section>
 
@@ -110,16 +123,31 @@ export default function AboutPage() {
             <h2 className="text-xl font-semibold">Proyectos Destacados</h2>
             <ul className="list-disc list-inside text-muted-foreground space-y-1">
               <li>
-                <strong>Wearfashion:</strong> Proyecto grupal final en Henry Bootcamp. Lideré sprints ágiles y contribuí
-                al desarrollo fullstack. (JavaScript, React, Redux, PostgreSQL, Sequelize, Firebase)
+                <strong>Servidor MU Online:</strong> Configuración e
+                implementación de un servidor privado S6. Integración de CMS,
+                conexión con base de datos real del juego, desarrollo de tienda
+                de ítems y rankings. (PHP, SQL Server, WebEngine CMS)
               </li>
+              <br/>
               <li>
-                <strong>ALK Software:</strong> Plataforma de creación web dirigida a usuarios no técnicos. Frontend
-                desarrollado con TypeScript, Next.js, TailwindCSS.
+                <strong>Wearfashion:</strong> Proyecto grupal final en Henry
+                Bootcamp. Lideré sprints ágiles y contribuí al desarrollo
+                fullstack. (JavaScript, React, Redux, PostgreSQL, Sequelize,
+                Firebase)
               </li>
+              <br/>
+
               <li>
-                <strong>Drivers:</strong> Aplicación que integra una API externa, CRUD completo y diseño de interfaz.
-                (React, Express, PostgreSQL)
+                <strong>ALK Software:</strong> Plataforma de creación web
+                dirigida a usuarios no técnicos. Frontend desarrollado con
+                TypeScript, Next.js, TailwindCSS.
+              </li>
+              <br/>
+
+              <li>
+                <strong>Drivers:</strong> Aplicación que integra una API
+                externa, CRUD completo y diseño de interfaz. (React, Express,
+                PostgreSQL)
               </li>
             </ul>
           </section>
@@ -127,7 +155,9 @@ export default function AboutPage() {
           <Separator />
 
           <section className="space-y-2">
-            <h2 className="text-xl font-semibold">Tecnologías y Herramientas</h2>
+            <h2 className="text-xl font-semibold">
+              Tecnologías y Herramientas
+            </h2>
             <ul className="list-disc list-inside text-muted-foreground space-y-1">
               <li>Frontend: React, Next.js, TypeScript, TailwindCSS</li>
               <li>Backend: Node.js, Nest.js, Express</li>
@@ -149,5 +179,5 @@ export default function AboutPage() {
         </CardContent>
       </Card>
     </main>
-  )
+  );
 }
