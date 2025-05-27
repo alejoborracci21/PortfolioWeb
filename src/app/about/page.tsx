@@ -74,7 +74,7 @@ export default function AboutPage() {
 
           <Separator />
 
-          <section className="space-y-4 text-base leading-relaxed">
+          <section className="space-y-4 text-base leading-relaxed text-justify">
             <p>
               Soy un desarrollador fullstack con una sólida base técnica y una
               pasión por crear soluciones que generen valor real. Estudié en{" "}
@@ -121,7 +121,7 @@ export default function AboutPage() {
 
           <section className="space-y-4">
             <h2 className="text-xl font-semibold">Proyectos Destacados</h2>
-            <ul className="list-disc list-inside text-muted-foreground space-y-1">
+            <ul className="list-disc list-inside text-muted-foreground space-y-1 text-justify">
               <li>
                 <strong>Servidor MU Online:</strong> Configuración e
                 implementación de un servidor privado S6. Integración de CMS,
@@ -155,7 +155,7 @@ export default function AboutPage() {
           <Separator />
 
           <section className="space-y-2">
-            <h2 className="text-xl font-semibold">
+            <h2 className="text-xl font-semibold text-justify">
               Tecnologías y Herramientas
             </h2>
             <ul className="list-disc list-inside text-muted-foreground space-y-1">

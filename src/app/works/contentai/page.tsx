@@ -58,7 +58,7 @@ export default function ContentAIPage() {
       />
       <div className="max-w-4xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-6">Acerca de Este Proyecto</h2>
-        <p className="text-lg leading-relaxed">{project.description}</p>
+        <p className="text-lg leading-relaxed text-justify">{project.description}</p>
       </div>
       <TechCarousel technologies={technologies} />
       <ProjectFeatures features={features} />

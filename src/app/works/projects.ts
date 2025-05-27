@@ -43,5 +43,14 @@ export const projects = [
   detailsLink: "/works/contentai",
   projectLink: "https://content-ai-chi.vercel.app/",
   description: "ContentAI fue un proyecto express desarrollado en tan solo 5 días como parte de una colaboración en NoCountry. La plataforma permite crear artículos de forma manual o generarlos automáticamente con inteligencia artificial, proporcionando parámetros como nicho, tema, longitud y formato. Utilizamos dos modelos de IA gratuitos con fallback automático para garantizar disponibilidad. Participé en el desarrollo del frontend con Next.js, la configuración del backend con NestJS, autenticación con Firebase, y una base de datos SQL. Implementamos una landing page, gestión de usuarios, una sección para artículos personales y un foro comunitario donde se publican todos los artículos generados por los usuarios."
-}
+},
+{
+    title: "SpeaklyAI - NoCountry",
+    tag: "Next.js • NestJS • TypeScript • Firebase • SQL • Inteligencia Artificial",
+    imageUrl: "/images/SpeaklyAI.png",
+    type: "Fullstack",
+    detailsLink: "/works/speaklyai",
+    projectLink: "https://speakly-ai-contet-ai.vercel.app/",
+    description: "SpeaklyAI es una plataforma para practicar inglés con diferentes niveles (Principiante, Intermedio, Avanzado). Los usuarios pueden registrarse, iniciar sesión y competir en un sistema de ranking global. Cada sesión de práctica genera preguntas dinámicas basadas en el nivel y la temática seleccionada gracias a un modelo de IA. Implementé el frontend con Next.js y Tailwind CSS, el backend con NestJS, la autenticación con Firebase y la persistencia en una base de datos SQL. Integré además lógica de puntuación, tablas de clasificación y perfiles de usuario con historial de prácticas."
+  }
 ];
