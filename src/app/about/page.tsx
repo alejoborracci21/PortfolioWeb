@@ -124,31 +124,79 @@ export default function AboutPage() {
             <ul className="list-disc list-inside text-muted-foreground space-y-1 text-justify">
               <li>
                 <strong>Servidor MU Online:</strong> Configuración e
-                implementación de un servidor privado S6. Integración de CMS,
-                conexión con base de datos real del juego, desarrollo de tienda
-                de ítems y rankings. (PHP, SQL Server, WebEngine CMS)
+                implementación completa de un servidor privado Season 6. Integré
+                WebEngine CMS con SQL Server para visualizar datos en tiempo
+                real. Desarrollé una tienda online que entrega ítems reales al
+                baúl del personaje usando generación de códigos HEX, rankings
+                dinámicos y conexión segura con la base del juego. El desafío
+                principal fue mantener integridad de datos y compatibilidad
+                entre cliente-servidor.
+                <br /> <em>Stack:</em> PHP, SQL Server, WebEngine CMS.
               </li>
-              <br/>
-              <li>
-                <strong>Wearfashion:</strong> Proyecto grupal final en Henry
-                Bootcamp. Lideré sprints ágiles y contribuí al desarrollo
-                fullstack. (JavaScript, React, Redux, PostgreSQL, Sequelize,
-                Firebase)
-              </li>
-              <br/>
+
+              <br />
 
               <li>
-                <strong>ALK Software:</strong> Plataforma de creación web
-                dirigida a usuarios no técnicos. Frontend desarrollado con
-                TypeScript, Next.js, TailwindCSS.
+                <strong>Wearfashion:</strong> Proyecto final grupal en Henry.
+                Integré pasarela de pagos (MercadoPago), desarrollé todo el
+                flujo de autenticación con Firebase, incluyendo registro, login
+                y manejo de sesiones. Implementé filtros avanzados por
+                categoría, talla y precio para las prendas, y participé en
+                vistas protegidas y rutas privadas. Además, lideré los sprints
+                ágiles y el trabajo en equipo desde Trello.
+                <br /> <em>Stack:</em> React, Redux, Firebase, Node.js, Express,
+                Sequelize, PostgreSQL, MercadoPago.
               </li>
-              <br/>
+
+              <br />
 
               <li>
-                <strong>Drivers:</strong> Aplicación que integra una API
-                externa, CRUD completo y diseño de interfaz. (React, Express,
-                PostgreSQL)
+                <strong>ALK Software:</strong> Plataforma low-code para crear
+                sitios web personalizados. Desarrollé el frontend completo con
+                componentes dinámicos reutilizables, formularios interactivos y
+                estructura pensada para usuarios sin conocimientos técnicos.
+                <br /> <em>Stack:</em> TypeScript, Next.js, TailwindCSS.
               </li>
+
+              <br />
+
+              <li>
+                <strong>Drivers:</strong> Proyecto individual. Creé la base de
+                datos SQL para corredores personalizados, conecté una API
+                externa como fuente para practicar la
+                normalización. Desarrollé filtros, ordenamientos, formulario de
+                creación y diseñé toda la interfaz desde cero.
+                <br /> <em>Stack:</em> React, Redux, Express, PostgreSQL,
+                Sequelize.
+              </li>
+
+              <br />
+
+              <li>
+                <strong>ContentAI:</strong> Plataforma de generación de
+                artículos con inteligencia artificial. Desarrollé
+                funcionalidades para redactar contenido con OpenAI, guardar
+                artículos, ver historial, editarlos y exportarlos. Implementé
+                autenticación, dashboard privado y consumo de API. Conectado a
+                Firebase y alojado en Vercel.
+                <br /> <em>Stack:</em> Next.js, TypeScript, TailwindCSS,
+                Firebase, OpenAI API.
+              </li>
+
+              <br />
+
+              <li>
+                <strong>Cappsy:</strong> Aplicación web para influencers.
+                Implementé autenticación, generador de ideas con IA (Hugging
+                Face), calendario de publicaciones, sistema de etiquetas y
+                guardado de contenido en Supabase. Cada función fue diseñada
+                pensando en la experiencia del usuario y la reutilización del
+                código.
+                <br /> <em>Stack:</em> Next.js, Supabase, TailwindCSS,
+                TypeScript, Hugging Face.
+              </li>
+
+
             </ul>
           </section>
 
@@ -161,7 +209,7 @@ export default function AboutPage() {
             <ul className="list-disc list-inside text-muted-foreground space-y-1">
               <li>Frontend: React, Next.js, TypeScript, TailwindCSS</li>
               <li>Backend: Node.js, Nest.js, Express</li>
-              <li>Bases de Datos: PostgreSQL, Sequelize, Firebase</li>
+              <li>Bases de Datos: PostgreSQL, Sequelize, Firebase, Supabase</li>
               <li>Control de Versiones: Git, GitHub</li>
               <li>Metodologías Ágiles: Scrum</li>
             </ul>
