@@ -33,7 +33,7 @@ export default function AboutPage() {
               </p>
               <div className="flex flex-wrap gap-2">
                 <Button variant="outline" className="gap-2" asChild>
-                  <a href="/AlejoB.CV.pdf" download>
+                  <a href="/AlejoB.CV.html" download>
                     <Download className="h-4 w-4" />
                     Descargar CV
                   </a>
