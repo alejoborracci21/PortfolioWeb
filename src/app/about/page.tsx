@@ -151,6 +151,13 @@ export default function AboutPage() {
               <br />
 
               <li>
+                <strong>SpeaklyAI:</strong> Plataforma para practicar inglés con diferentes niveles y sistema de ranking global. Implementé frontend con Next.js y TailwindCSS, backend con NestJS, autenticación con Firebase y persistencia en base SQL. Integré lógica de puntuación, tablas de clasificación y perfiles de usuario con historial de prácticas. Las preguntas se generan dinámicamente usando IA según nivel y temática.
+                <br /> <em>Stack:</em> Next.js, NestJS, TypeScript, TailwindCSS, Firebase, SQL, Inteligencia Artificial.
+              </li>
+
+              <br />
+
+              <li>
                 <strong>ALK Software:</strong> Plataforma low-code para crear
                 sitios web personalizados. Desarrollé el frontend completo con
                 componentes dinámicos reutilizables, formularios interactivos y
